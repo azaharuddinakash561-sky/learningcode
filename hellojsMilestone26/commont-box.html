@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="post">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis similique maiores pariatur dolor expedita? Sed culpa repudiandae amet, neque voluptatibus blanditiis ex assumenda debitis autem in nisi maiores ea. Porro.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis similique maiores pariatur dolor expedita? Sed culpa repudiandae amet, neque voluptatibus blanditiis ex assumenda debitis autem in nisi maiores ea. Porro.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis similique maiores pariatur dolor expedita? Sed culpa repudiandae amet, neque voluptatibus blanditiis ex assumenda debitis autem in nisi maiores ea. Porro.</p>
+    </div>
+
+
+    <div>
+        <textarea class="post-text_value" name="" id="" cols="60" rows="10"></textarea>
+        <button class="btn-post">Post</button>
+    </div>
+
+    <script>
+       document.getElementById('btn-post').addEventListener('click', function(){
+        const textValue = document.getElementById('post-text_value');
+        const textValueAdd = textValue.value;
+
+        const postAdd = document.getElementById('post');
+        const postCreate = document.createElement('p')
+        postCreate.innerText = textValueAdd;
+        postAdd.appendChild()
+
+       })
+    </script>
+</body>
+</html>

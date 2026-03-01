@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="posted">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. part 1</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. part 2</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. part 3</p>
+    </div>
+
+    <div>
+        <textarea name="" id="text-value" cols="60" rows="20"></textarea><br>
+        <button id="btn">Post</button>
+    </div>
+    <script>
+        document.getElementById('btn').addEventListener('click', function(){
+            const inBtn = document.getElementById('text-value');
+            const inBtnValue = inBtn.value;
+
+            const inposted = document.getElementById('posted');
+            const inPostParagrape = document.createElement('p');
+            inposted.appendChild(inPostParagrape);
+            inPostParagrape.innerText = inBtnValue;
+            inBtn.value = ''
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="textHead">Some text your name update </h1><hr><hr>
+    <input id="inputText" type="text">
+    <button id="btnUpdate">Update Text Header</button>
+
+    <script>
+        document.getElementById('btnUpdate').addEventListener('click', function(){
+            const intext = document.getElementById('inputText');
+            const intextValu = intext.value;
+            const headR1 = document.getElementById('textHead')
+            headR1.innerText = intextValu;
+            intext.value = '';
+        }) 
+    </script>
+</body>
+</html>

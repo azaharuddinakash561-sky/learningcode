@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="pTageText">Dom change p Tage text</p>
+    <input id="valuInput" type="text">
+    <button id="updateBtN">Update Text</button>
+
+    <script>
+        document.getElementById('updateBtN').addEventListener('click', function(){
+            const inpuValu =  document.getElementById('valuInput');
+            const inpuValuUpdate = inpuValu.value;
+            const pTageTextUpdate = document.getElementById('pTageText')
+            pTageTextUpdate.innerText = inpuValuUpdate;
+            pTageText.value = '';
+        })
+    </script>
+</body>
+</html>

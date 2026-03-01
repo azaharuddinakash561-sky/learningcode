@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+           
+            border: 2px solid brown;
+        }
+        #sectionList {
+            
+            border: 2px solid blue;
+        }
+        #ulItem{
+            border: 2px solid rebeccapurple;
+            padding: 20px 20px 20px 20px;
+            margin: 20px 20px 20px 20px;
+        }
+        #item-2{
+            border: 2px solid coral;
+        }
+    </style>
+</head>
+<body id="body">
+    <h1>Exploring Event Bubble</h1>
+    <section id="sectionList">
+        <ul id="ulItem">
+            <li id="item-1">Lorem ipsum dol amet.</li>
+            <li id="item-2">Lorem  d olor sit amet.</li>
+            <li id="item-3">  Lorem.ipsum dolor sit amet.</li>
+            <li id="item-4">Lorem, ipsum dolor.</li>
+            <li id="item-5">dolar case foo</li>
+            <li id="item-6"> azahar uddin </li>
+        </ul>  
+    </section>
+    <script>
+        document.getElementById('body').addEventListener('click', function(event){
+            console.log('body click it');
+            event.stopPropagation ();
+        })
+        document.getElementById('sectionList').addEventListener('click', function(event){
+            console.log('sectionList click it');
+            
+        })
+        document.getElementById('ulItem').addEventListener('click', function(event){
+            console.log('ulItem click it');
+            event.stopImmediatePropagation ();
+        })
+        document.getElementById('item-2').addEventListener('click', function(event){
+          console.log('item-2 click it');
+          event.stopPropagation ();
+          
+      })
+
+
+    </script>
+</body>
+</html>

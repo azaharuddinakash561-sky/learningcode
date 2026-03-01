@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Explore more events </h1>
+    <button id="btn">Events</button>
+    <input id = 'inputText' type="text">
+
+    <script>
+        // document.getElementById('inputText').addEventListener('focus', function(){
+        //     console.log('even trigger inside the input field')
+        // })
+        // document.getElementById('inputText').addEventListener('blur', function(){
+        //     console.log('even trigger inside the input field')
+        // })
+        // document.getElementById('inputText').addEventListener('keydown', function(){
+        //     console.log('even trigger inside the input field')
+        // })
+        // document.getElementById('inputText').addEventListener('keypress', function(){
+        //     console.log(event.target.value)
+        // })
+        // document.getElementById('inputText').addEventListener('keydown', function(event){
+        //     console.log(event.target.value)
+        // })
+        document.getElementById('inputText').addEventListener('keyup', function(event){
+            console.log(event.target.value)
+        })
+        document.getElementById('btn').addEventListener('mousemove', function(event){
+            console.log('this is a function')
+        })
+    </script>
+</body>
+</html>
