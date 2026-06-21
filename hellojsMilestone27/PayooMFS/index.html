@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Payoo MFS</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="bg-sky-900">
+    
+    <main class="flex justify-center ">
+       <div class="mockup-phone">
+        <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display  grid place-content-center bg-neutral-900">
+                <!-- loging section -->
+             <div class="hero  min-h-screen">
+                <div class="hero-content flex-col ">
+                    
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                        <fieldset class="fieldset">
+                        <label class="label text-cyan-400">Phone Number</label>
+                        <input id="phone_number" type="number" class="input" placeholder="">enter phone no
+                        <label class="label">pin</label>
+                        <input id="pinNumber" type="password" class="input" placeholder="your pin" autocomplete="off"/>
+                        <div><a class="link link-hover">Forgot password?</a></div>
+                        <button id="button-loging" class="btn btn-neutral mt-4">Login</button>
+                        </fieldset>
+                    </form>
+                    </div>
+                </div>
+                </div>
+                 <!-- loging scetion end -->
+            </div>
+        </div> 
+    </main>
+    <!-- js linked -->
+     <script src="./index.js"></script>
+</body>
+</html>
