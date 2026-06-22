@@ -1,5 +1,6 @@
 // add an event handler to the add money button inside the form
-document.getElementById('addMoney').addEventListener('click', function(event){
+document.getElementById('addMoney')
+.addEventListener('click', function(event){
     event.preventDefault();
 
     // sep2 get money to be added to money
@@ -10,7 +11,7 @@ document.getElementById('addMoney').addEventListener('click', function(event){
   
   // step 3 verify pin number 
     // this is a wrong way to validate
-    if(pinNumberInput === "1234" ){
+    if(pinNumberInput === "1234" && add_moneyInput === "1234"){
         
         // step 4 current balance
         const balance = document.getElementById('current-balance').innerText 

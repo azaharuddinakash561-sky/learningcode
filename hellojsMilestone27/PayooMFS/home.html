@@ -34,8 +34,8 @@
 
 
                 <!-- add money form -->
-                <div class="flex justify-center">
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div  class=" flex justify-center">
+                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <div class="card-body">
                             <fieldset class="fieldset">
                                 <label class="label">amount</label>
@@ -54,12 +54,12 @@
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <div class="card-body">
                             <fieldset class="fieldset">
-                                <label class="label">amount</label>
-                                <input id="inputAddMoney" type="text" class="input" placeholder="amount" />
+                                <label class="label">cash out</label>
+                                <input id="inputCashOut" type="text" class="input" placeholder="cash out" />
                                 <label class="label">pin</label>
-                                <input id="input_pin_number" type="password" class="input" placeholder="pin" autocomplete="off" />
+                                <input id="input_cash_out_pin" type="password" class="input" placeholder="pin" autocomplete="off" />
                                 
-                                <button id="addMoney" class="btn btn-neutral mt-4">Add Money </button>
+                                <button id="cashOut" class="btn btn-neutral mt-4">cash out </button>
                             </fieldset>
                         </div>
                     </div>
@@ -69,6 +69,7 @@
         </div>
     </main>
     <script src="/home.js"></script>
+    <script src="/cashOut.js"></script>
 </body>
 
 </html>
