@@ -7,14 +7,14 @@ document.getElementById('addMoney')
     const add_moneyInput = document.getElementById('inputAddMoney').value
     // get in the pin number
     const pinNumberInput = document.getElementById('input_pin_number').value
-
+    const pinNum = parseFloat(pinNumberInput)
   
   // step 3 verify pin number 
     // this is a wrong way to validate
-    if(pinNumberInput === "1234" && add_moneyInput === "1234"){
+    if(pinNumberInput === 1234 ){
         
         // step 4 current balance
-        const balance = document.getElementById('current-balance').innerText 
+        const balance = document.getElementById('current-balance').innerText;
 
         // step-5 add add_moneyInput with balance
         const addMoneyNumber =  parseFloat(add_moneyInput);

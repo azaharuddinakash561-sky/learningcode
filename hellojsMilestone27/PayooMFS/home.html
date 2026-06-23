@@ -19,7 +19,7 @@
                 <div class="stats shadow top-12 right-0 flex justify-center">
                     <div class="stat text-center">
                         <div class="stat-title">Total Page Views</div>
-                        <div id="current-balance" class="stat-value">89,400</div>
+                        <div id="show_balance" class="stat-value">89,400</div>
                         <div class="stat-desc">Avaliable Balance</div>
                     </div>
                 </div>
@@ -27,15 +27,14 @@
                 <!-- avable balance -->
                 <!-- add money -->
                 <div class="flex justify-center">
-                    <button class="btn btn-lg">Add Money</button>
-                    <button class="btn btn-lg">Cash Out</button>
+                    <button id="btn_addMoney" class="btn btn-lg">Add Money</button>
+                    <button id="btn_cashOut" class="btn btn-lg">Cash Out</button>
                 </div>
                 <div class="divider mt-12"></div>
 
 
                 <!-- add money form -->
-                <div  class=" flex justify-center">
-                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+               <div id="cash_addform" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <div class="card-body">
                             <fieldset class="fieldset">
                                 <label class="label">amount</label>
@@ -47,29 +46,27 @@
                             </fieldset>
                         </div>
                     </div>
-                </div>
                 <!-- add money form -->
                 <!-- cash out start -->
-                 <div class="flex justify-center">
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                 <div id="cash_outform" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <div class="card-body">
                             <fieldset class="fieldset">
                                 <label class="label">cash out</label>
-                                <input id="inputCashOut" type="text" class="input" placeholder="cash out" />
+                                <input id="amountInputOut" type="text" class="input" placeholder="amount out" />
                                 <label class="label">pin</label>
-                                <input id="input_cash_out_pin" type="password" class="input" placeholder="pin" autocomplete="off" />
+                                <input id="pin" type="password" class="input" placeholder="pin" autocomplete="off" />
                                 
-                                <button id="cashOut" class="btn btn-neutral mt-4">cash out </button>
+                                <button id="btn_cashOut" class="btn btn-neutral mt-4">cash out </button>
                             </fieldset>
                         </div>
                     </div>
-                </div>
                 <!-- cash out end -->
             </div>
         </div>
     </main>
     <script src="/home.js"></script>
     <script src="/cashOut.js"></script>
+    <script src="/fetacers.js"></script>
 </body>
 
 </html>
